@@ -12,6 +12,8 @@
       ./system/localization/de.nix
       ./system/audio/pipewire.nix
       ./programs/office.nix
+      ./programs/basic.nix
+      ./programs/browser/firefox.nix
       ./system/user/mmaag.nix
     ];
 

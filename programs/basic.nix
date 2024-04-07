@@ -4,9 +4,10 @@
 {
     environment.systemPackages = with pkgs;
     [
-        git
-        bash
-        unzip
-        busybox
+        git  # version control system
+        bash # common known shell
+        unzip # tool to make use of zip-archives
+        busybox # collection of standard unix cli programs
+        nano # simple cli editor
     ];
 }
