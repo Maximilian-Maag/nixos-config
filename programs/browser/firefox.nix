@@ -55,17 +55,25 @@
             installation_mode = "force_installed";
           };
 
+          # getting rid of cookie banner
+          "idcac-pub@guus.ninja" = {
+            install_url = "https://addons.mozilla.org/firefox/downloads/file/4216095/istilldontcareaboutcookies-1.1.4.xpi";
+            installation_mode = "force_installed";
+          };
+
+          # blocking sponsorships in yt videos
+          "sponsorBlocker@ajay.app" = {
+            install_url = "https://addons.mozilla.org/firefox/downloads/file/4251917/sponsorblock-5.5.9.xpi";
+            installation_mode = "force_installed";
+          };
+
           # Bitwarden
           "{446900e4-71c2-419f-a6a7-df9c091e268b}" = {
             install_url = "https://addons.mozilla.org/firefox/downloads/file/4246600/bitwarden_password_manager-2024.2.1.xpi";
             installation_mode = "force_installed";
           };
 
-          # 1Password:
-          #"{d634138d-c276-4fc8-924b-40a0ea21d284}" = {
-            #install_url = "https://addons.mozilla.org/firefox/downloads/latest/1password-x-password-manager/latest.xpi";
-           # installation_mode = "force_installed";
-          #};
+
         };
   
         /* ---- PREFERENCES ---- */
