@@ -66,7 +66,8 @@
             #install_url = "https://addons.mozilla.org/firefox/downloads/latest/1password-x-password-manager/latest.xpi";
            # installation_mode = "force_installed";
           #};
-        };
+        #};
+        ;
   
         /* ---- PREFERENCES ---- */
         # Check about:config for options.
