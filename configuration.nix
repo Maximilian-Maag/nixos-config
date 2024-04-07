@@ -29,5 +29,6 @@
   nixpkgs.config.allowUnfree = true;
 
   # setting nixos version
+  system.allowReboot = true;
   system.stateVersion = "23.11"; # Did you read the comment?
 }

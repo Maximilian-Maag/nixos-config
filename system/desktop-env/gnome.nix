@@ -9,6 +9,7 @@
 
     environment.systemPackages = with pkgs;
     [
+        # not supported in gnome 45
         gnomeExtensions.true-color-window-invert
     ];
 }
