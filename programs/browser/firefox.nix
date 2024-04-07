@@ -59,7 +59,7 @@
           "{446900e4-71c2-419f-a6a7-df9c091e268b}" = {
             install_url = "https://addons.mozilla.org/firefox/downloads/file/4246600/bitwarden_password_manager-2024.2.1.xpi";
             installation_mode = "force_installed";
-          }
+          };
 
           # 1Password:
           #"{d634138d-c276-4fc8-924b-40a0ea21d284}" = {
