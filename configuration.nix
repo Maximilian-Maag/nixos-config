@@ -7,7 +7,7 @@
 {
   imports =
     [ # Include other modules
-      ./hardware-configuration.nix
+      /etc/nixos/hardware-configuration.nix
       ./system/desktop-env/gnome.nix
       ./system/localization/de.nix
       ./system/audio/pipewire.nix
