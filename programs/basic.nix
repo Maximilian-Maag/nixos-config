@@ -9,5 +9,7 @@
         unzip # tool to make use of zip-archives
         busybox # collection of standard unix cli programs
         nano # simple cli editor
+	vscode
+	nextcloud-client # you might aswell use owncloud aswell
     ];
 }
