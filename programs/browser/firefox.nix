@@ -73,7 +73,11 @@
             installation_mode = "force_installed";
           };
 
-
+          # buster captcha solver to get rid of captchas
+          "{e58d3966-3d76-4cd9-8552-1582fbc800c1}" = {
+            install_url = "https://addons.mozilla.org/firefox/downloads/file/4044701/buster_captcha_solver-2.0.1.xpi";
+            installation_mode = "force_installed";
+          };
         };
   
         /* ---- PREFERENCES ---- */
