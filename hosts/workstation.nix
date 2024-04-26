@@ -1,14 +1,9 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
-# to use this configuration reference it in your nix-config in /etc/nixos/configuration.nix
-
 { config, pkgs, ... }:
 
 {
   imports =
     [ # Include other modules
-      ./system/desktop-env/gnome.nix
+      ./system/desktop-env/kde-plasma.nix
       ./system/localization/de.nix
       ./system/audio/pipewire.nix
       ./programs/office.nix

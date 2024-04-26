@@ -1,8 +1,3 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
-# to use this configuration reference it in your nix-config in /etc/nixos/configuration.nix
-
 { config, pkgs, ... }:
 
 {
@@ -17,7 +12,7 @@
       ./system/user/mmaag.nix
     ];
 
-  networking.hostName = "workstation"; # Define your hostname.
+  networking.hostName = "mmaag-notebook"; # Define your hostname.
 
   # Enable networking
   networking.networkmanager.enable = true;

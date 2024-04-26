@@ -49,6 +49,7 @@
             install_url = "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi";
             installation_mode = "force_installed";
           };
+          
           # Privacy Badger:
           "jid1-MnnxcxisBPnSXQ@jetpack" = {
             install_url = "https://addons.mozilla.org/firefox/downloads/latest/privacy-badger17/latest.xpi";
@@ -67,7 +68,7 @@
             installation_mode = "force_installed";
           };
 
-          # Bitwarden
+          # Bitwarden to manage passwords
           "{446900e4-71c2-419f-a6a7-df9c091e268b}" = {
             install_url = "https://addons.mozilla.org/firefox/downloads/file/4246600/bitwarden_password_manager-2024.2.1.xpi";
             installation_mode = "force_installed";
