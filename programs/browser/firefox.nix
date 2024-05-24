@@ -28,8 +28,8 @@
           Fingerprinting = true;
         };
         DisablePocket = true;
-        DisableFirefoxAccounts = true;
-        DisableAccounts = true;
+        DisableFirefoxAccounts = false;
+        DisableAccounts = false;
         DisableFirefoxScreenshots = true;
         OverrideFirstRunPage = "";
         OverridePostUpdatePage = "";
@@ -62,7 +62,7 @@
             installation_mode = "force_installed";
           };
 
-          # blocking sponsorships in yt videos
+          # sponsorblock
           "sponsorBlocker@ajay.app" = {
             install_url = "https://addons.mozilla.org/firefox/downloads/file/4251917/sponsorblock-5.5.9.xpi";
             installation_mode = "force_installed";
@@ -75,7 +75,7 @@
           };
 
           # passwords
-          "{ncpasswords@mdns.eu}" = {
+          "ncpasswords@mdns.eu" = {
             install_url = "https://addons.mozilla.org/firefox/downloads/file/4224680/nextcloud_passwords-2.6.0.xpi";
             installation_mode = "force_installed";
           };
