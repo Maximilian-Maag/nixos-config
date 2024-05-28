@@ -28,8 +28,8 @@
           Fingerprinting = true;
         };
         DisablePocket = true;
-        DisableFirefoxAccounts = true;
-        DisableAccounts = true;
+        DisableFirefoxAccounts = false;
+        DisableAccounts = false;
         DisableFirefoxScreenshots = true;
         OverrideFirstRunPage = "";
         OverridePostUpdatePage = "";
@@ -49,33 +49,34 @@
             install_url = "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi";
             installation_mode = "force_installed";
           };
+
           # Privacy Badger:
           "jid1-MnnxcxisBPnSXQ@jetpack" = {
             install_url = "https://addons.mozilla.org/firefox/downloads/latest/privacy-badger17/latest.xpi";
             installation_mode = "force_installed";
           };
 
-          # getting rid of cookie banner
+          # i still dont care about cookies
           "idcac-pub@guus.ninja" = {
             install_url = "https://addons.mozilla.org/firefox/downloads/file/4216095/istilldontcareaboutcookies-1.1.4.xpi";
             installation_mode = "force_installed";
           };
 
-          # blocking sponsorships in yt videos
+          # sponsorblock
           "sponsorBlocker@ajay.app" = {
             install_url = "https://addons.mozilla.org/firefox/downloads/file/4251917/sponsorblock-5.5.9.xpi";
             installation_mode = "force_installed";
           };
 
-          # Bitwarden
-          "{446900e4-71c2-419f-a6a7-df9c091e268b}" = {
-            install_url = "https://addons.mozilla.org/firefox/downloads/file/4246600/bitwarden_password_manager-2024.2.1.xpi";
+          # buster captcha solver
+          "{e58d3966-3d76-4cd9-8552-1582fbc800c1}" = {
+            install_url = "https://addons.mozilla.org/firefox/downloads/file/4044701/buster_captcha_solver-2.0.1.xpi";
             installation_mode = "force_installed";
           };
 
-          # buster captcha solver to get rid of captchas
-          "{e58d3966-3d76-4cd9-8552-1582fbc800c1}" = {
-            install_url = "https://addons.mozilla.org/firefox/downloads/file/4044701/buster_captcha_solver-2.0.1.xpi";
+          # passwords
+          "ncpasswords@mdns.eu" = {
+            install_url = "https://addons.mozilla.org/firefox/downloads/file/4224680/nextcloud_passwords-2.6.0.xpi";
             installation_mode = "force_installed";
           };
         };
