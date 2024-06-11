@@ -10,5 +10,6 @@
         # busybox # collection of standard unix cli programs
         nano # simple cli editor
         vscodium # vs code without ms telemetry
+        android-tools
     ];
 }
