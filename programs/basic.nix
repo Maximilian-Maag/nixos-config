@@ -10,7 +10,5 @@
         nano # simple cli editor
         vscodium # vs code without ms telemetry
         android-tools
-        wine
-        winetricks
     ];
 }
