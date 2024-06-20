@@ -10,5 +10,17 @@
         nano # simple cli editor
         vscodium # vs code without ms telemetry
         android-tools
+        gscan2pdf
+        # online id
+        ausweisapp
+        pcsclite
+        libusb1  
     ];
+
+    # services for online id
+    services.pcscd.enable = true;
+    services.pcscd.plugins = [ pkgs.acsccid ];
+    # enable scanner
+    hardware.sane.enable = true;
+    
 }

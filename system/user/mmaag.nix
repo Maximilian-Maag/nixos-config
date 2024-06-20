@@ -6,6 +6,6 @@
     users.users.mmaag = {
         isNormalUser = true;
         description = "Maximilain Jakob Maag";
-        extraGroups = [ "networkmanager" "wheel" ];
+        extraGroups = [ "networkmanager" "wheel" "scanner" "lp"];
     };
 }
