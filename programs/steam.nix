@@ -9,9 +9,9 @@
     };
 
     # symlink games folder on different harddrive to default library folder of steam
-    system.userActivationScripts.linkSteamfolder.text = ''
-        if [[ ! -h "$HOME/Games/Steam/" ]]; then
-            ln -s "$HOME/Games/Steam/" "$HOME/.local/share/"
-        fi
-    '';
+    #system.userActivationScripts.linkSteamfolder.text = ''
+    #    if [[ ! -h "$HOME/Games/Steam/" ]]; then
+    #        ln -s "$HOME/Games/Steam/" "$HOME/.local/share/"
+    #    fi
+    #'';
 }
