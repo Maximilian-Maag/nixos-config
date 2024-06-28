@@ -84,10 +84,10 @@
         /* ---- PREFERENCES ---- */
         # Check about:config for options.
         Preferences = { 
-          "browser.contentblocking.category" = { Value = "strict"; Status = "locked"; };
+          "browser.contentblocking.category" = { Value = "default"; Status = "locked"; };
           "extensions.pocket.enabled" = lock-false;
-          "extensions.screenshots.disabled" = lock-true;
-          "browser.topsites.contile.enabled" = lock-false;
+          "extensions.screenshots.disabled" = lock-false;
+          "browser.topsites.contile.enabled" = lock-true;
           "browser.formfill.enable" = lock-false;
           "browser.search.suggest.enabled" = lock-false;
           "browser.search.suggest.enabled.private" = lock-false;
