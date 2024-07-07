@@ -3,13 +3,13 @@
 {
   imports =
     [ # Include other modules
-      ./system/desktop-env/gnome.nix
-      ./system/localization/de.nix
-      ./system/audio/pipewire.nix
-      ./programs/office.nix
-      ./programs/basic.nix
-      ./programs/browser/firefox.nix
-      ./system/user/mmaag.nix
+      ../system/desktop-env/gnome.nix
+      ../system/localization/de.nix
+      ../system/audio/pipewire.nix
+      ../programs/office.nix
+      ../programs/basic.nix
+      ../programs/browser/firefox.nix
+      ../system/user/mmaag.nix
     ];
 
   networking.hostName = "mmaag-notebook"; # Define your hostname.

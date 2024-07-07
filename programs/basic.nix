@@ -22,5 +22,4 @@
     services.pcscd.plugins = [ pkgs.acsccid ];
     # enable scanner
     hardware.sane.enable = true;
-    
 }
