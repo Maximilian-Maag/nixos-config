@@ -1,17 +1,17 @@
 { config, pkgs, ... }:
 
 {
-    # legacy file for 23.11 systems
+    # this config is ment for nixos 24.05
     services.xserver.enable = true;
-    services.xserver.desktopManager.plasma5.enable = true;
+    services.xserver.desktopManager.plasma6.enable = true;
     services.xserver.displayManager.lightdm.enable = true;
     #services.xserver.displayManager.lightdm.background = "somepath";
     services.xserver.windowManager.stumpwm.enable = true;
     services.xserver.xkbOptions = "ctrl:nocaps";
-    services.xserver.libinput.enable = true; # Enable touchpad support
+    services.xserver.libinput.enable = false; # Enable touchpad support
 
     # specific clients for this desktop environment
-    environment.systemPackages = [
-    	pkgs.nextcloud-client
+    environment.systemPackages = with pkgs [
+    	nextcloud-client
     ];
 }

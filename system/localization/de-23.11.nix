@@ -1,6 +1,7 @@
 { config, pkgs, ... }:
 
 {
+  # legacy version of this file for 23.11 systems
   # Set your time zone.
   time.timeZone = "Europe/Berlin";
 
@@ -22,8 +23,8 @@
 
   # Configure keymap in X11
   services.xserver = {
-    xkb.layout = "de";
-    xkb.variant = "";
+    layout = "de";
+    xkbVariant = "";
   };
 
   # Configure console keymap
