@@ -25,5 +25,5 @@
 
   # setting nixos version
   # system.allowReboot = true;
-  system.stateVersion = "23.11"; # Did you read the comment?
+  system.stateVersion = "24.05"; # Did you read the comment?
 }

@@ -8,7 +8,6 @@
         bash # common known shell
         unzip # tool to make use of zip-archives
         nano # simple cli editor
-        vscodium # vs code without ms telemetry
         android-tools
         gscan2pdf
         # online id

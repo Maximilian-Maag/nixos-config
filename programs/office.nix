@@ -8,7 +8,5 @@
         thunderbird # email
         slack # communication
         libreoffice # office suit
-        texliveFull # latex distro
-        texstudio # latex editor
     ];
 }

@@ -1,6 +1,7 @@
 { config, pkgs, ... }:
 
 {
+    # legacy file for 23.11 systems
     services.xserver.enable = true;
     services.xserver.desktopManager.plasma5.enable = true;
     services.xserver.displayManager.lightdm.enable = true;
