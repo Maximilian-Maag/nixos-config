@@ -11,7 +11,6 @@
         android-tools
         gscan2pdf
         # online id
-        ausweisapp
         pcsclite
         libusb1  
     ];
