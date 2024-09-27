@@ -8,6 +8,7 @@
       ../system/audio/pipewire.nix
       ../programs/office.nix
       ../programs/basic.nix
+      ../programs/docker.nix
       ../programs/steam.nix
       ../programs/browser/firefox.nix
       ../programs/latex.nix
