@@ -9,15 +9,6 @@
         unzip # tool to make use of zip-archives
         nano # simple cli editor
         android-tools
-        gscan2pdf
-        # online id
-        pcsclite
-        libusb1  
+        gscan2pdf 
     ];
-
-    # services for online id
-    services.pcscd.enable = true;
-    services.pcscd.plugins = [ pkgs.acsccid ];
-    # enable scanner
-    hardware.sane.enable = true;
 }
