@@ -9,6 +9,9 @@
         unzip # tool to make use of zip-archives
         nano # simple cli editor
         android-tools
-        gscan2pdf 
+        gscan2pdf
+        libsForQt5.qt5.qtscxml
+        ausweisapp
     ];
+    programs.ausweisapp.openFirewall = true;
 }
