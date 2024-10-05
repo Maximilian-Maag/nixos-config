@@ -11,6 +11,7 @@
       ../programs/docker.nix
       ../programs/steam.nix
       ../programs/browser/firefox.nix
+      ../programs/browser/chromium.nix
       ../programs/latex.nix
       ../system/user/mmaag.nix
     ];
