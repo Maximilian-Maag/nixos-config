@@ -9,6 +9,7 @@
         unzip # tool to make use of zip-archives
         nano # simple cli editor
         android-tools
-        gscan2pdf 
+        gscan2pdf
+        chatgpt-cli 
     ];
 }
