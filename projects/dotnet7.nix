@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{config, pkgs, home-manager, ... }:
 let
   dotnet-full =
     with pkgs.dotnetCorePackages;
@@ -25,7 +25,7 @@ let
   );
 in
 {
-  programs.vscode = {
+  home-manager.users.mmaag.programs.vscode = {
     enable = true;
     package =
       (pkgs.vscode.overrideAttrs (prevAttrs: {
