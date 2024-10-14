@@ -12,6 +12,7 @@
       ../programs/steam.nix
       ../programs/browser/firefox.nix
       ../programs/latex.nix
+      ../system/home-manager.nix
       ../system/user/mmaag.nix
     ];
 
