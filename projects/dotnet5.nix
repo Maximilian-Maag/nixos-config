@@ -3,9 +3,9 @@ let
   dotnet-full =
     with pkgs.dotnetCorePackages;
     combinePackages [
-      sdk_6_0
-      runtime_6_0
-      aspnetcore_6_0
+      sdk_5_0
+      runtime_5_0
+      aspnetcore_5_0
     ];
 
   deps = (
