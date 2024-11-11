@@ -11,9 +11,13 @@
         android-tools
         gscan2pdf
         libsForQt5.qt5.qtscxml
-        ausweisapp
         scmccid # drivers for smartcard reader
     ];
-    programs.ausweisapp.openFirewall = true;
+
+    programs.ausweisapp =  {
+        enable = true;
+        openFirewall = true;
+    };
+
     services.pcscd.enable = true;
 }
