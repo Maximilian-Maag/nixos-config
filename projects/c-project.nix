@@ -3,8 +3,11 @@
 
 {
     # other libs for c maybe loaded here
-    environment.systemPackages = with pkgs [
+    environment.systemPackages = with pkgs; 
+    [
         gcc
-        make
+        gnumake
+        cmocka
+        cmake
     ];
 }
