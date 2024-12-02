@@ -14,6 +14,7 @@
       ../programs/latex.nix
       ../system/home-manager.nix
       ../system/user/mmaag.nix
+      ../programs/structurizr.nix
     ];
 
   networking.hostName = "workstation"; # Define your hostname.

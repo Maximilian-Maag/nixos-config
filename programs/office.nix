@@ -7,7 +7,9 @@
         # office
         texstudio
         thunderbird # email
-        slack # communication
+        teams # communication
         libreoffice # office suit
     ];
+
+    nixpkgs.config.allowUnsupportedSystem = true;
 }
