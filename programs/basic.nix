@@ -5,6 +5,7 @@
     environment.systemPackages = with pkgs;
     [
         git  # version control system
+        gh # github cli
         bash # common known shell
         unzip # tool to make use of zip-archives
         nano # simple cli editor
