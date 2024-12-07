@@ -15,6 +15,8 @@
     environment.systemPackages = with pkgs; 
     [
        davinci-resolve
+       vlc
+       ffmpeg-full
     ];
 
     hardware.opengl = {
