@@ -19,6 +19,11 @@
        ffmpeg-full
     ];
 
+    boot.extraModulePackages = with config.boot.kernelPackages; [ v4l2loopback ];
+        boot.kernelModules = [
+        "v4l2loopback"
+    ];
+
     hardware.opengl = {
         enable = true;
         extraPackages = with pkgs; [
