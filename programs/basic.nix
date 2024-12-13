@@ -13,6 +13,7 @@
         gscan2pdf
         libsForQt5.qt5.qtscxml
         scmccid # drivers for smartcard reader
+        discord
     ];
 
     programs.ausweisapp =  {
