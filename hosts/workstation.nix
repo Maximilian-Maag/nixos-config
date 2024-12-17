@@ -5,7 +5,7 @@
     [ # Include other modules
       ../system/desktop-env/kde-plasma6.nix
       ../system/localization/de.nix
-      ../system/audio/pulesaudio.nix
+      ../system/audio/pipewire-with-virt-mic.nix
       ../programs/office.nix
       ../programs/basic.nix
       ../programs/docker.nix
