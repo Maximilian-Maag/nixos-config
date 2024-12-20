@@ -3,7 +3,7 @@ let
   dotnet-full =
     with pkgs.dotnetCorePackages; # change number for different dotnet setup
     combinePackages [
-      sdk_9_0_3xx
+      dotnet_9.sdk
       dotnet_9.runtime
       dotnet_9.aspnetcore
     ];
