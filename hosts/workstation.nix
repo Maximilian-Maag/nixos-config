@@ -14,6 +14,7 @@
       ../system/home-manager.nix
       ../system/user/mmaag.nix
       ../programs/structurizr.nix
+      ../programs/ollama-amd.nix
     ];
 
   networking.hostName = "workstation"; # Define your hostname.
