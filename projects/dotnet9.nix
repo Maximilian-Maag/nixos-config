@@ -1,44 +1,33 @@
 {config, pkgs, home-manager, ... }:
 let
   dotnet-full =
-    with pkgs.dotnetCorePackages;
+    with pkgs.dotnetCorePackages; # change number for different dotnet setup
     combinePackages [
-      sdk_9_0
-      runtime_9_0
-      aspnetcore_9_0
+      dotnet_9.sdk
+      dotnet_9.runtime
+      dotnet_9.aspnetcore
     ];
-
-  deps = (
-    ps:
-    with ps;
-    [
-      rustup
-      zlib
-      openssl.dev
-      pkg-config
-      stdenv.cc
-      cmake
-      mono
-      msbuild
-    ]
-    ++ [ dotnet-full ]
-  );
 in
 {
-  home-manager.users.mmaag.programs.vscode = {
-    enable = true;
-    package =
-      (pkgs.vscode.overrideAttrs (prevAttrs: {
-        nativeBuildInputs = prevAttrs.nativeBuildInputs ++ [ pkgs.makeWrapper ];
-        postFixup =
-          prevAttrs.postFixup
-          + ''
-            wrapProgram $out/bin/code \
-              --set DOTNET_ROOT "${dotnet-full}" \
-              --prefix PATH : "~/.dotnet/tools"
-          '';
-      })).fhsWithPackages
-        (ps: deps ps);
-    extensions = [ pkgs.vscode-extensions.sonarsource.sonarlint-vscode ];
-  };
+
+  nixpkgs.config.permittedInsecurePackages = [
+    "dotnet-sdk-6.0.428"
+    "dotnet-runtime-6.0.36"
+    "dotnet-sdk-wrapped-6.0.428"
+  ];
+
+
+  environment.systemPackages = with pkgs; 
+  [
+    dotnet-full
+    rustup
+    zlib
+    openssl.dev
+    pkg-config
+    stdenv.cc
+    cmake
+    mono
+    msbuild
+    dotnet-ef
+  ];
 }
