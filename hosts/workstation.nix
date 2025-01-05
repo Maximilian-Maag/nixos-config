@@ -5,7 +5,7 @@
     [ # Include other modules
       ../system/desktop-env/kde-plasma6.nix
       ../system/localization/de.nix
-      ../system/audio/pipewire-with-virt-mic.nix
+      ../system/audio/pipewire.nix
       ../programs/office.nix
       ../programs/basic.nix
       ../programs/docker.nix
@@ -26,11 +26,8 @@
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
-
   # setting nixos version
   # system.allowReboot = true;
-  system.stateVersion = "24.05"; # Did you read the comment?
+  system.stateVersion = "24.11"; # Did you read the comment?
   services.printing.cups-pdf.enable = true;
 }
