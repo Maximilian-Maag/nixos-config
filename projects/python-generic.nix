@@ -4,6 +4,7 @@
 let
   # Define a Python environment with desired packages (FAISS, numpy, scipy, etc.)
   pythonEnv = pkgs.python3.withPackages (ps: with ps; [
+    # a generic collection for data since and ai stuff
     faiss
     sentence-transformers
     scikit-learn
@@ -11,6 +12,7 @@ let
     numpy
     scipy
     pandas
+    pytest
     # Add any other dependencies you need
   ]);
 in
@@ -22,7 +24,6 @@ in
     ];
     
     home-manager.users.mmaag = {
-        nixpkgs.config.allowUnfree = true;
         # IDE with python syntax highlighting
         programs.vscode = {
             enable = true;

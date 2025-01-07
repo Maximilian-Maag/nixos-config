@@ -16,6 +16,7 @@
       ../programs/structurizr.nix
       ../programs/ollama-amd.nix
       ../system/bluetooth.nix
+      ../projects/obs-screencast.nix
     ];
 
   networking.hostName = "workstation"; # Define your hostname.
@@ -26,11 +27,8 @@
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
-
   # setting nixos version
   # system.allowReboot = true;
-  system.stateVersion = "24.05"; # Did you read the comment?
+  system.stateVersion = "24.11"; # Did you read the comment?
   services.printing.cups-pdf.enable = true;
 }
