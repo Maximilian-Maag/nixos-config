@@ -2,14 +2,14 @@
 
 {
     home-manager.users.mmaag = {
-        programs.obs-studio = {
-         enable = true;
-         plugins = with pkgs.obs-studio-plugins; [
-         wlrobs
-         obs-backgroundremoval
-         obs-pipewire-audio-capture
-         obs-composite-blur
-        ];
+            programs.obs-studio = {
+                enable = true;
+                plugins = with pkgs.obs-studio-plugins; [
+                wlrobs
+                obs-backgroundremoval
+                obs-pipewire-audio-capture
+                obs-composite-blur
+            ];
         };
     };
 
@@ -18,6 +18,7 @@
        davinci-resolve
        vlc
        ffmpeg-full
+       v4l-utils
     ];
 
     boot.extraModulePackages = with config.boot.kernelPackages; [ v4l2loopback ];

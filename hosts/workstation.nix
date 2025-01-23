@@ -6,15 +6,15 @@
       ../system/desktop-env/kde-plasma6.nix
       ../system/localization/de.nix
       ../system/audio/pipewire-with-virt-mic.nix
-      ../programs/office.nix
       ../programs/basic.nix
       ../programs/docker.nix
       ../programs/browser/firefox.nix
-      ../programs/latex.nix
       ../system/home-manager.nix
       ../system/user/mmaag.nix
-      ../programs/structurizr.nix
       ../programs/ollama-amd.nix
+      ../programs/vs-code-angular-csharp.nix
+      ../programs/basic.nix
+      ../programs/office.nix
       ../system/bluetooth.nix
       ../projects/obs-screencast.nix
     ];
