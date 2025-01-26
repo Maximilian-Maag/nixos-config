@@ -17,10 +17,12 @@ home-manager.users.mmaag = {
                 jnoortheen.nix-ide
                 ms-dotnettools.csharp
                 ms-dotnettools.csdevkit
+                ms-dotnettools.vscode-dotnet-runtime
                 angular.ng-template
                 dbaeumer.vscode-eslint
                 naumovs.color-highlight
                 bradlc.vscode-tailwindcss
+                firefox-devtools.vscode-firefox-debug
             ];
              keybindings = [
                 {
