@@ -8,6 +8,6 @@
         texstudio
         thunderbird # email
         teams-for-linux
-        libreoffice # office suit
+        onlyoffice-desktopeditors
     ];
 }
