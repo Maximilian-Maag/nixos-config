@@ -13,9 +13,8 @@
         };
     };
 
-    environment.systemPackages = with pkgs; 
+    environment.systemPackages = with pkgs;
     [
-       davinci-resolve
        vlc
        ffmpeg-full
        v4l-utils

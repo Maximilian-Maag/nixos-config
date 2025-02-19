@@ -10,7 +10,9 @@
       ../programs/basic.nix
       ../programs/docker.nix
       ../programs/browser/firefox.nix
-      ../programs/latex.nix
+      ../programs/ide/latex.nix
+      ../programs/ide/rider.nix
+      ../programs/ide/vs-code-angular.nix
       ../system/home-manager.nix
       ../system/user/mmaag.nix
       ../programs/structurizr.nix
