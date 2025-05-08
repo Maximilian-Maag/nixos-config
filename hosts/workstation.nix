@@ -13,7 +13,7 @@
       ../system/user/mmaag.nix
       ../programs/ollama-amd.nix
       ../programs/ide/rider.nix
-      ../programs/ide/vs-code-angular.nix
+      ../programs/ide/vs-code-rust.nix
       ../programs/ide/latex.nix
       ../programs/basic.nix
       ../programs/office.nix

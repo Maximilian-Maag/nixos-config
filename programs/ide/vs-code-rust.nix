@@ -1,4 +1,3 @@
-
 {config, pkgs, ...}:
 
 {
@@ -8,17 +7,7 @@ home-manager.users.mmaag = {
         programs.vscode = {
             enable = true;
             extensions = with pkgs.vscode-extensions; [
-                bierner.markdown-mermaid
-                mhutchie.git-graph
-                pkief.material-icon-theme
-                oderwat.indent-rainbow
-                bierner.markdown-emoji
-                bierner.emojisense
-                jnoortheen.nix-ide
-                angular.ng-template
-                dbaeumer.vscode-eslint
-                naumovs.color-highlight
-                bradlc.vscode-tailwindcss
+                rust-lang.rust-analyzer
                 firefox-devtools.vscode-firefox-debug
             ];
                 userSettings = {
@@ -68,4 +57,9 @@ home-manager.users.mmaag = {
             ];
         };
     };
+
+    ## needed toolchain
+    environment.systemPackages = with pkgs; [
+        wget vim rustup gcc
+    ];
 }
