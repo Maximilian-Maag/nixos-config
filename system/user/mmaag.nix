@@ -6,6 +6,6 @@
     users.users.mmaag = {
         isNormalUser = true;
         description = "Maximilain Jakob Maag";
-        extraGroups = [ "networkmanager" "wheel" "scanner" "lp" "sudo"];
+        extraGroups = [ "docker" "networkmanager" "wheel" "scanner" "lp" "sudo" "network"];
     };
 }

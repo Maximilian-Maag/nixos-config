@@ -7,6 +7,8 @@ home-manager.users.mmaag = {
         programs.vscode = {
             enable = true;
             extensions = with pkgs.vscode-extensions; [
+                bierner.markdown-mermaid
+                vadimcn.vscode-lldb
                 rust-lang.rust-analyzer
                 firefox-devtools.vscode-firefox-debug
             ];
@@ -25,13 +27,6 @@ home-manager.users.mmaag = {
             "files.trimFinalNewlines" = true;
             "files.insertFinalNewline" = true;
             "diffEditor.ignoreTrimWhitespace" = false;
-            # Git
-            "git.enableCommitSigning" = true;
-            "git-graph.repository.sign.commits" = true;
-            "git-graph.repository.sign.tags" = true;
-            "git-graph.repository.commits.showSignatureStatus" = true;
-            # Other
-            "dotnet.preferCSharpExtension" = true;
             "telemetry.telemetryLevel" = "off";
             "update.showReleaseNotes" = false;
             };

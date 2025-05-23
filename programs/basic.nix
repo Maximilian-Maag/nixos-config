@@ -2,6 +2,13 @@
 {config, pkgs, ...}:
 
 {
+
+    home-manager.users.mmaag = {
+        home.sessionVariables = {
+            DISTROBOX_EXPORT_DIR = "/home/mmaag/.local/bin/distrobox-exports";
+        };
+    };
+
     environment.systemPackages = with pkgs;
     [
         git  # version control system
@@ -14,6 +21,7 @@
         libsForQt5.qt5.qtscxml
         scmccid # drivers for smartcard reader
         discord
+        distrobox
     ];
 
     programs.ausweisapp =  {
