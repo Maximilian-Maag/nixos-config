@@ -1,5 +1,5 @@
 
-{config, pkgs, ...}:
+{lib, config, pkgs, ...}:
 
 {
 programs.nix-ld.enable = true;
@@ -20,6 +20,19 @@ home-manager.users.mmaag = {
                 naumovs.color-highlight
                 bradlc.vscode-tailwindcss
                 firefox-devtools.vscode-firefox-debug
+            ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
+                {
+                name = "sqltools";
+                publisher = "mtxr";
+                version = "0.28.4";
+                sha256 = "sha256-ExeerCI5yDa/DJqNOwENDjw+xhMPNil6JgCAUNdTXy8=";
+                }
+                {
+                name = "sqltools-driver-pg";
+                publisher = "mtxr";
+                version = "0.5.5";
+                sha256 = "sha256-B1wycDFSWPaQ87HF54+GrNX0b5f3tODLStuxqICdkjs=";
+                }
             ];
                 userSettings = {
             # General
