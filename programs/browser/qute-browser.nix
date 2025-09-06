@@ -32,6 +32,12 @@ in
     };
 
     programs.qutebrowser = {
+      extraConfig = ''
+      c.url.searchengines = {
+        "DEFAULT": "https://duckduckgo.com/?q={}",
+        "rd": "https://www.reddit.com/r/{}",
+      }
+      '';
       enable = true;
       settings = {
         content.blocking.enabled = true;
@@ -41,9 +47,7 @@ in
         content.cookies.accept = "no-3rdparty";  # Fix here
         content.javascript.enabled = true;
         content.cookies.store = false;
-        content.ssl_strict = true;
         content.canvas_reading = false;
-        content.webrtc_ip_handling_policy = "disable_non_proxied_udp";
 
         # User agent spoofing
         content.headers.user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:102.0) Gecko/20100101 Firefox/102.0";
