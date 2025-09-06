@@ -9,6 +9,7 @@
       ../programs/basic.nix
       ../programs/docker.nix
       ../programs/browser/firefox.nix
+      ../programs/browser/qute-browser.nix
       ../system/home-manager.nix
       ../system/user/mmaag.nix
       ../programs/ollama-amd.nix
