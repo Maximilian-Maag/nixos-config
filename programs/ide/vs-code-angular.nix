@@ -7,7 +7,7 @@ programs.nix-ld.package = pkgs.nix-ld;
 home-manager.users.mmaag = {
         programs.vscode = {
             enable = true;
-            extensions = with pkgs.vscode-extensions; [
+            profiles.default.extensions = with pkgs.vscode-extensions; [
                 bierner.markdown-mermaid
                 mhutchie.git-graph
                 pkief.material-icon-theme
@@ -34,7 +34,7 @@ home-manager.users.mmaag = {
                 sha256 = "sha256-B1wycDFSWPaQ87HF54+GrNX0b5f3tODLStuxqICdkjs=";
                 }
             ];
-                userSettings = {
+                profiles.default.userSettings = {
             # General
             "editor.fontSize" = 16;
             "editor.fontFamily" = "'Jetbrains Mono', 'monospace', monospace";
@@ -59,7 +59,7 @@ home-manager.users.mmaag = {
             "telemetry.telemetryLevel" = "off";
             "update.showReleaseNotes" = false;
             };
-             keybindings = [
+            profiles.default.keybindings = [
                 {
                     key = "ctrl+y";
                     command = "editor.action.commentLine";

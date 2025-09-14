@@ -5,7 +5,7 @@
     [ # Include other modules
       ../system/desktop-env/kde-plasma6.nix
       ../system/localization/de.nix
-      ../system/audio/pipewire-with-virt-mic.nix
+      ../system/audio/pipewire.nix
       ../programs/basic.nix
       ../programs/docker.nix
       ../programs/browser/firefox.nix
@@ -21,7 +21,6 @@
       ../programs/office.nix
       ../system/bluetooth.nix
       ../projects/obs-screencast.nix
-      #../projects/deep-teach-cli.nix
     ];
 
   networking.hostName = "workstation"; # Define your hostname.
