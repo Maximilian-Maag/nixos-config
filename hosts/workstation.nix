@@ -15,7 +15,7 @@
       ../programs/ollama-amd.nix
       ../programs/virt-manager.nix
       ../programs/ide/rider.nix
-      ../programs/ide/vs-code-angular.nix
+      ../programs/ide/vs-code-c.nix
       ../programs/ide/latex.nix
       ../programs/basic.nix
       ../programs/office.nix
