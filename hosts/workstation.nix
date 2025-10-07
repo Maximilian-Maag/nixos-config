@@ -15,13 +15,12 @@
       ../programs/ollama-amd.nix
       ../programs/virt-manager.nix
       ../programs/ide/rider.nix
-      ../programs/ide/vs-code-angular.nix
+      ../programs/ide/vs-code-c.nix
       ../programs/ide/latex.nix
       ../programs/basic.nix
       ../programs/office.nix
       ../system/bluetooth.nix
       ../projects/obs-screencast.nix
-      #../projects/deep-teach-cli.nix
     ];
 
   networking.hostName = "workstation"; # Define your hostname.
