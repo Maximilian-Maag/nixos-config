@@ -21,7 +21,6 @@
       ../programs/office.nix
       ../system/bluetooth.nix
       ../projects/obs-screencast.nix
-      #../projects/deep-teach-cli.nix
     ];
 
   networking.hostName = "workstation"; # Define your hostname.
